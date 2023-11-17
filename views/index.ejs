@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kitchen Inventory</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Kitchen Inventory</h1>
+  <p>This program keeps your inventory for the kitchen. If the item has a quanity of zero it is moved to grocery list </p>
+  <h2>Grocery List</h2>
+  <ul class="lists">
+    <% for(var i=0; i<lists.length; i++) {%>
+      <li class="list">
+        <span><%= lists[i].name %></span>
+        <span><%= lists[i].msg %></span>
+        <span><%= lists[i].thumbUp %></span>
+        <span><i class="fa fa-minus-circle" aria-hidden="true"></i></span>
+        <span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+      </li>
+    <% } %>
+  </ul>
+
+
+  <h2>Kitchen Inventory</h2>
+  <ul class="messages">
+  <% for(var i=0; i<messages.length; i++) {%>
+    <li class="message">
+      <span><%= messages[i].name %></span>
+      <span><%= messages[i].msg %></span>
+      <span><%= messages[i].thumbUp %></span>
+      <span><i class="fa fa-minus-circle" aria-hidden="true"></i></span>
+      <span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h3>Add Item</h3>
+
+  <form action="/messages" method="POST">
+    <input type="text" placeholder="category" name="name">
+    <input type="text" placeholder="description" name="msg">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

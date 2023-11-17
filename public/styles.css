@@ -1,0 +1,65 @@
+body {
+  background: #282c34; /* Dark green background color */
+  color: #b2b2b2; /* Light gray text color */
+  font-family: 'Arial', sans-serif; /* Set a preferred font */
+}
+
+h1, h2, h3 {
+  color: #61afef; /* Light blue text color for headings */
+}
+
+p {
+  color: #abb2bf; /* Light blue text color for paragraphs */
+}
+
+ul.lists, ul.messages {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.list, .message {
+  background-color: #1e1e1e; /* Dark gray background for each item */
+  border: 1px solid #282c34; /* Dark green border for separation */
+  padding: 10px;
+  margin-bottom: 10px; /* Add space between items */
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: space-between; /* Space evenly between elements */
+  align-items: center; /* Center items vertically */
+}
+
+.list span, .message span {
+  flex: 1; /* Distribute space equally among spans */
+  color: #abb2bf; /* Light blue text color for spans */
+}
+
+.fa-minus-circle, .fa-plus-circle, .fa-trash {
+  color: #61afef; /* Light blue color for icons */
+  cursor: pointer;
+  margin: 0 5px; /* Add space around icons */
+}
+
+.fa-minus-circle:hover, .fa-plus-circle:hover, .fa-trash:hover {
+  color: #56b6c2; /* Adjust color on hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input, button {
+  margin-bottom: 10px; /* Add space between form elements */
+}
+
+button {
+  background-color: #98c379; /* Light green color for the button */
+  color: #282c34; /* Dark green text color for the button */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #88b274; /* Adjust color on hover */
+}
