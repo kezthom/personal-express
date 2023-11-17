@@ -5,8 +5,8 @@ const MongoClient = require('mongodb').MongoClient // using mongo
 
 var db, collection;// creatinf db nand vb
 
-const url = "mongodb+srv://demo:demo@cluster0-q2ojb.mongodb.net/test?retryWrites=true"; // url from mongo db cluster,  Defines the connection URL for the MongoDB database, including credentials and necessary details to connect to a specific cluster.
-const dbName = "demo"; // database name, Specifies the name of the database to be used within MongoDB.
+const url = "mongodb+srv://keztho:hellojo@cluster0.ocytoxj.mongodb.net/?retryWrites=true&w=majority"; // url from mongo db cluster,  Defines the connection URL for the MongoDB database, including credentials and necessary details to connect to a specific cluster.
+const dbName = "random"; // database name, Specifies the name of the database to be used within MongoDB.
 
 app.listen(4000, () => { // Starts the server on port 3000 and establishes a connection to the MongoDB database. Upon successful connection, it logs a message.
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {// connects us to MongoDB string url. Uses headered and paramer of error nd client
